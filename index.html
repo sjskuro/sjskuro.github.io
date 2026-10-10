@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의 시작 홈페이지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-left">
+        <a href="https://www.sdu.ac.kr/" target="_blank" rel="noopener" class="sdu-logo-link">
+            <span class="sdu-text">SDU</span> 서울디지털대학교
+        </a>
+    </div>
+
+    <div class="top-right">
+        <div id="weather-seoul" class="weather-widget">서울 날씨 로딩 중...</div>
+        <div id="weather-jeju" class="weather-widget">제주 날씨 로딩 중...</div>
+    </div>
+
+    <main class="center">
+        <p id="clock" class="clock">--:--</p>
+        <h1 class="title">나만의 시작 홈페이지</h1>
+
+        <form id="search-form" class="search-form" action="https://www.google.com/search" method="get" target="_blank">
+            <input type="text" id="search-input" name="q" class="search-input" placeholder="Google 검색 또는 URL 입력" autocomplete="off" autofocus>
+            <div class="button-row">
+                <button type="submit" class="btn">Google 검색</button>
+                <button type="button" id="lucky-btn" class="btn">I'm Feeling Lucky</button>
+            </div>
+        </form>
+
+        <blockquote class="quote">
+            <p id="quote-text">오늘의 명언을 불러오는 중...</p>
+            <footer id="quote-author"></footer>
+        </blockquote>
+
+        <nav class="shortcuts">
+            <a href="https://www.sdu.ac.kr/" target="_blank" rel="noopener">SDU</a>
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.naver.com/" target="_blank" rel="noopener">네이버</a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+        </nav>
+    </main>
+
+    <footer class="page-footer">바이브코딩 프로젝트02 · GitHub Pages 배포</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
